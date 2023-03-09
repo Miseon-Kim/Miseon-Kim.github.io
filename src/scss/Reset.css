@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background: #fff;
+  letter-spacing: -.5px;
+  -webkit-text-size-adjust: none;
+  font-size: var(--size-md);
+}
+
+html, body {
+  height: 100%;
+}
+
+body, div, dl, dt, dd, ul, ol, li, hgroup, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset,
+legend, textarea, p, blockquote, th, td, input, select, textarea, button {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+fieldset, img {
+  border: 0 none;
+}
+
+dl, ul, ol, menu, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+em, address {
+  font-style: normal;
+}
+
+hr {
+  display: none;
+  visibility: hidden;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+input, select, textarea, button {
+  vertical-align: middle;
+  font-size: 100%;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+table {
+  background-color: transparent;
+  border-spacing: 0;
+}
+
+a {
+  color: var(--color-gray1);
+  text-decoration: none;
+}
+
+a:active, a:focus {
+  color: var(--color-gray1);
+  text-decoration: none;
+}
+
+:root {
+  /* color */
+  --color-white: #fff;
+  --color-block: #000;
+  --color-gray1: #333;
+  --color-gray2: #444;
+  --color-gray3: #666;
+  --color-gray4: #999;
+  --color-gray5: #ccc;
+  --color-gray6: #eee;
+  --color-gray7: #ddd;
+  --color-dark1: #282c34;
+  --color-yellow: #fcff23;
+  --color-yellow2: #fffbcc;
+  --color-yellow3: #ffed23;
+  --color-yellow4: #ffcc23;
+  --color-blue: #2380ff;
+  --color-blue2: #0048ff;
+  --color-blue3: #2f4270;
+  --color-violet: #7c4bdf;
+  --color-violet2: #5300a0;
+  --color-orange: #ff633f;
+  --color-green: #016823;
+  --color-green2: #00c542;
+  --color-green3: #e1ebe4;
+  --color-pink: #ff4ab4;
+  --color-valid: #0048ff;
+  --color-invalid: #e93c79;
+  /* font-size */
+  /* default size : var(--size-md); */
+  --size-2xs: .4rem;
+  --size-xs: .8rem;
+  --size-sm: 1.2rem;
+  --size-ms: 1.4rem;
+  --size-md: 1.6rem;
+  --size-ml: 1.8rem;
+  --size-lg: 2.0rem;
+  --size-xl: 2.4rem;
+  --size-2xl: 2.8rem;
+  --size-3xl: 3.2rem;
+  --size-4xl: 4.0rem;
+}

@@ -1,0 +1,142 @@
+@import url(Reset.scss);
+
+.App {
+  /* text-align: center; */
+}
+
+header {
+  background-color:var(--color-dark1);
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  padding-left:1rem;
+  font-size: calc(6px + 2vmin);
+  color:var(--color-white);
+}
+
+.item {
+  &-lst {
+    & > li {
+      padding:2rem;
+      & ~ li {border-top:1px solid var(--color-gray7);}
+
+      .btnWrap {
+        margin:2rem 0;
+        & > .btn {
+          &.type1 {background:var(--color-violet2);}
+        }
+      }
+    }
+  }
+  
+  &-group {
+    & > dt {
+      display:flex;
+      // justify-content: space-between;
+      font : {
+        size:var(--size-md);
+      }
+    }
+    & > dd {
+      margin-top:.5rem;
+      color:var(--color-gray3);
+      font : {
+        size:var(--size-ms);
+      }
+    }
+    
+    .tit {
+      font : {
+        weight:bold;
+        size:var(--size-ml);
+      }
+    }
+  }
+
+  &-good {
+    margin-left:5rem;
+    color:var(--color-pink);
+  }
+  &-mod {
+    margin-left:5rem;
+  }
+}
+
+[role="button"] {cursor: pointer;}
+.btn {
+  padding:.3rem 1rem;
+  border-radius:3px;
+
+  & + & {margin-left:.5rem;}
+  &Wrap {
+    margin:2rem;
+    & + ul {border-top:2px solid var(--color-dark1);}
+  }
+  &.type1 {
+    background:var(--color-blue3);
+    color:var(--color-white);
+    font: {
+      size:var(--size-sm);
+    }
+  }
+  &.line1 {
+    background:var(--color-white);
+    color:var(--color-gray1);
+    border:1px solid var(--color-gray4);
+    font: {
+      size:var(--size-sm);
+    }
+  }
+}
+
+.modal {
+  background:var(--color-gray7);
+  padding:2rem;
+  .cont {
+    &-tit {
+      font: {
+        size:var(--size-xl);
+        weight:bold;
+      }
+    }
+    &-desc {
+      margin-top:1.5rem;
+      font: {
+        size:var(--size-md);
+      }
+       & > p {
+        & ~ p {margin-top:1rem;}
+       }
+      
+    }
+  }
+  .btnWrap {
+    margin:2rem 0;
+    & > .btn.type1 {
+      background:var(--color-gray1);
+    }
+  }
+}
+
+.form {
+  &Wrap {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:3rem 2rem;
+    background:var(--color-green3);
+
+    & > .btn.type2 {
+      margin-left:1rem;
+      padding:.3rem 1rem;
+      border-radius:3px;
+      background:var(--color-green);
+      color:var(--color-white);
+      font: {
+        size:var(--size-sm);
+      }
+    }
+  }
+}
